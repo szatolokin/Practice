@@ -35,7 +35,7 @@ namespace Apacs.SDK.Web
 
             var fullUrl = apacsApiUrl + "object/root";
 
-            var response = await httpClient.GetAsync(fullUrl);
+            var response = await httpClient.GetStringAsync(fullUrl);
             Console.WriteLine(response);
         }
     }
